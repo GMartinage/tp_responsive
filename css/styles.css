@@ -1,5 +1,43 @@
 picture {
 	display: block;
 	float: left;
+}
+
+picture img {
 	max-width: 100%;
+}
+
+nav {
+	display: flex;
+	justify-content: space-around;
+	background-color: #729672;
+	color: #eee;
+	font-family: arial, sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-bottom: 2em;
+}
+
+nav > div {
+	padding: 10px;
+  	flex: 1 1 auto;
+  	text-align: center;
+  	border: 2px solid #fff;
+  	transition: 0.5s;
+}
+
+nav > div:hover {
+	background-color: #967296;
+	flex: 2 2 auto;
+	transition: 0.5s;
+}
+
+/* MEDIA QUERIES */
+
+@media all and (max-width: 640px) {
+
+nav {
+	flex-direction: column;
+}
+
 }
