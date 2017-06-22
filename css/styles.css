@@ -11,6 +11,7 @@ picture img {
 
 section {
 	display: grid;
+	clear: both;
 }
 
 .staff {
@@ -45,7 +46,6 @@ nav {
 
 footer {
 	display: flex;
-	clear: both;
 	justify-content: space-around;
 	background-color: #729672;
 	color: #eee;
