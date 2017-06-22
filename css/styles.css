@@ -1,4 +1,29 @@
+body {
+	background-color: #e9e9e9;
+}
+
+header {
+	display: block;
+	width: 100%;
+	height: auto;
+	background-color: #1E635E;
+	padding: 2em 0;
+	text-align: center;
+}
+
+header p {
+	padding-top: 1em;
+	font-family: arial, sans-serif;
+	font-size: 1.5em;
+	font-weight: bold;
+	color: #eee;
+}
+
+.gallery {
+}
+
 picture {
+	width: 25%;
 	display: block;
 	float: left;
 	margin-top: 0.5em;
@@ -34,10 +59,14 @@ section {
  grid-row-start: 5;
 }
 
+h2 {
+	clear: both;
+}
+
 nav {
 	display: flex;
 	justify-content: space-around;
-	background-color: #729672;
+	background-color: #21867F;
 	color: #eee;
 	font-family: arial, sans-serif;
 	font-weight: bold;
@@ -47,21 +76,39 @@ nav {
 footer {
 	display: flex;
 	justify-content: space-around;
-	background-color: #729672;
+	background-color: #21867F;
 	color: #eee;
 	font-family: arial, sans-serif;
 }
 
-nav > div, footer > div {
+nav > div {
 	padding: 10px;
-  	flex: 1 1 auto;
+  	flex: 1 1;
   	text-align: center;
-  	border: 2px solid #fff;
+  	border-right: 1px solid #1E635E;
+  	border-left: 1px solid #1E635E;
   	transition: 0.5s;
 }
 
+footer > div {
+	padding: 10px;
+  	flex: 1 1;
+  	text-align: center;
+  	border-right: 1px solid #e9e9e9;
+  	border-left: 1px solid #e9e8e9;
+  	transition: 0.5s;
+}
+
+nav > div:first-child, footer > div:first-child {
+	border-left: none;
+}
+
+nav > div:last-child, footer > div:last-child {
+	border-right: none;
+}
+
 nav > div:hover {
-	background-color: #967296;
+	background-color: #1E635E;
 	flex: 2 2 auto;
 	transition: 0.5s;
 }
@@ -72,6 +119,32 @@ nav > div:hover {
 
 nav, footer {
 	flex-direction: column;
+}
+
+nav > div {
+	border-top: 1px solid #1E635E;
+	border-right: none;
+	border-left: none;
+  	border-bottom: 1px solid #1E635E;
+}
+
+footer > div {
+	border-top: 1px solid #e9e9e9;
+	border-right: none;
+	border-left: none;
+  	border-bottom: 1px solid #e9e9e9;
+}
+
+nav > div:first-child, footer > div:first-child {
+	border-top: none;
+}
+
+nav > div:last-child, footer > div:last-child {
+	border-bottom: none;
+}
+
+picture {
+	width: 100%;
 }
 
 }
