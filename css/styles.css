@@ -1,6 +1,8 @@
 picture {
 	display: block;
 	float: left;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
 }
 
 picture img {
@@ -15,10 +17,18 @@ nav {
 	font-family: arial, sans-serif;
 	font-weight: bold;
 	text-transform: uppercase;
-	margin-bottom: 2em;
 }
 
-nav > div {
+footer {
+	display: flex;
+	clear: both;
+	justify-content: space-around;
+	background-color: #729672;
+	color: #eee;
+	font-family: arial, sans-serif;
+}
+
+nav > div, footer > div {
 	padding: 10px;
   	flex: 1 1 auto;
   	text-align: center;
@@ -36,7 +46,7 @@ nav > div:hover {
 
 @media all and (max-width: 640px) {
 
-nav {
+nav, footer {
 	flex-direction: column;
 }
 
